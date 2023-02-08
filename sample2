@@ -1,0 +1,4 @@
+sample project
+ <user role= "manager-gui"/>
+ <user role= "manager-script"/>
+ <user role= "manager-xml"/>
