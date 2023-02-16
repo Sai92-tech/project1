@@ -13,11 +13,7 @@ pipeline {
             }
 
         }   
-        stage ('upload to nexus') {
-            steps {
-                nexusArtifactUploader artifacts: [[artifactId: 'sample', classifier: '', file: 'target/Example-0.0.1-SNAPSHOT.war', type: 'war']], credentialsId: 'saikumar_nexus', groupId: 'maven', nexusUrl: '18.234.169.101:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'java', version: '1.0.10'
-            }
-        }
+        
         
     }
 
